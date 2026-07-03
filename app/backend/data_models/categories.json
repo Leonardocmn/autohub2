@@ -1,0 +1,20 @@
+{
+    "title": "categories",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "name": {
+            "type": "string",
+            "description": "Category name"
+        },
+        "description": {
+            "type": "string",
+            "description": "Category description"
+        }
+    },
+    "required": [
+        "name"
+    ]
+}

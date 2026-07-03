@@ -1,0 +1,14 @@
+[
+    {
+        "setting_key": "EVOLUTION_API_URL",
+        "setting_value": "https://143.95.217.12"
+    },
+    {
+        "setting_key": "EVOLUTION_API_KEY",
+        "setting_value": "E6BDDC34FA95-4FE3-9A26-28C76AEE7F8D"
+    },
+    {
+        "setting_key": "EVOLUTION_INSTANCE_NAME",
+        "setting_value": "autohub"
+    }
+]

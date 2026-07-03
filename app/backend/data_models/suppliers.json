@@ -1,0 +1,32 @@
+{
+    "title": "suppliers",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "name": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "company": {
+            "type": "string"
+        },
+        "category": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "observations": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string",
+            "default": "active"
+        }
+    },
+    "required": []
+}

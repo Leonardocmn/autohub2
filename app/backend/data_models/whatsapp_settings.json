@@ -1,0 +1,21 @@
+{
+    "title": "whatsapp_settings",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "title": "Id"
+        },
+        "setting_key": {
+            "type": "string",
+            "title": "Setting Key"
+        },
+        "setting_value": {
+            "type": "string",
+            "title": "Setting Value"
+        }
+    },
+    "required": [
+        "setting_key"
+    ]
+}

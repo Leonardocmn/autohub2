@@ -1,0 +1,26 @@
+{
+    "title": "whatsapp_admin_phones",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "title": "Id"
+        },
+        "phone": {
+            "type": "string",
+            "title": "Phone"
+        },
+        "name": {
+            "type": "string",
+            "title": "Name"
+        },
+        "active": {
+            "type": "boolean",
+            "title": "Active",
+            "default": true
+        }
+    },
+    "required": [
+        "phone"
+    ]
+}

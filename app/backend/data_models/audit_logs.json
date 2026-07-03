@@ -1,0 +1,28 @@
+{
+    "title": "audit_logs",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "action": {
+            "type": "string"
+        },
+        "entity": {
+            "type": "string"
+        },
+        "entity_id": {
+            "type": "integer"
+        },
+        "old_value": {
+            "type": "string"
+        },
+        "new_value": {
+            "type": "string"
+        },
+        "ip_address": {
+            "type": "string"
+        }
+    },
+    "required": []
+}

@@ -1,0 +1,29 @@
+{
+    "title": "negotiation_numbers",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "phone": {
+            "type": "string",
+            "description": "WhatsApp number for negotiation"
+        },
+        "responsible_name": {
+            "type": "string",
+            "description": "Name of responsible person"
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "active",
+                "inactive"
+            ],
+            "default": "active"
+        }
+    },
+    "required": [
+        "phone",
+        "responsible_name"
+    ]
+}

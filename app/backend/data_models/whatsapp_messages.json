@@ -1,0 +1,66 @@
+{
+    "title": "whatsapp_messages",
+    "description": "Stores all incoming and outgoing WhatsApp messages",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Auto-increment ID"
+        },
+        "phone": {
+            "type": "string",
+            "description": "Phone number of the sender/receiver"
+        },
+        "contact_name": {
+            "type": "string",
+            "description": "Name of the contact if known"
+        },
+        "direction": {
+            "type": "string",
+            "description": "incoming or outgoing"
+        },
+        "message_type": {
+            "type": "string",
+            "description": "text, image, video, document, audio"
+        },
+        "content": {
+            "type": "string",
+            "description": "Text content of the message"
+        },
+        "media_url": {
+            "type": "string",
+            "description": "URL of media attachment if any"
+        },
+        "message_id": {
+            "type": "string",
+            "description": "WhatsApp message ID from Evolution API"
+        },
+        "conversation_id": {
+            "type": "integer",
+            "description": "Reference to whatsapp_conversations.id"
+        },
+        "processed": {
+            "type": "boolean",
+            "description": "Whether the message has been processed by AI",
+            "default": false
+        },
+        "is_supplier": {
+            "type": "boolean",
+            "description": "Whether the sender is a registered supplier",
+            "default": false
+        },
+        "is_buyer": {
+            "type": "boolean",
+            "description": "Whether the sender is a registered buyer",
+            "default": false
+        },
+        "timestamp": {
+            "type": "string",
+            "description": "Timestamp of the message from WhatsApp"
+        }
+    },
+    "required": [
+        "phone",
+        "direction"
+    ]
+}

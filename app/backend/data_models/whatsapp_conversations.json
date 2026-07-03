@@ -1,0 +1,49 @@
+{
+    "title": "whatsapp_conversations",
+    "description": "Groups WhatsApp messages by supplier phone using a session window",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Auto-increment ID"
+        },
+        "supplier_phone": {
+            "type": "string",
+            "description": "Phone number of the supplier"
+        },
+        "supplier_name": {
+            "type": "string",
+            "description": "Name of the supplier if registered"
+        },
+        "status": {
+            "type": "string",
+            "description": "active, analyzing, draft_created, completed, expired",
+            "default": "active"
+        },
+        "offer_draft_id": {
+            "type": "integer",
+            "description": "Reference to the offers.id created from this conversation"
+        },
+        "last_message_at": {
+            "type": "string",
+            "description": "Timestamp of the last message in the conversation"
+        },
+        "message_count": {
+            "type": "integer",
+            "description": "Number of messages in the conversation",
+            "default": 0
+        },
+        "ai_analysis": {
+            "type": "string",
+            "description": "JSON string with AI analysis results"
+        },
+        "window_closed": {
+            "type": "boolean",
+            "description": "Whether the conversation window has closed",
+            "default": false
+        }
+    },
+    "required": [
+        "supplier_phone"
+    ]
+}

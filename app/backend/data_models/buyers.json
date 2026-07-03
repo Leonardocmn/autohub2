@@ -1,0 +1,32 @@
+{
+    "title": "buyers",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "name": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "company": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "observations": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string",
+            "default": "active"
+        }
+    },
+    "required": []
+}

@@ -1,0 +1,38 @@
+{
+    "title": "fipe_consultation_logs",
+    "type": "object",
+    "properties": {
+        "phone": {
+            "type": "string",
+            "maxLength": 20
+        },
+        "plate": {
+            "type": "string",
+            "maxLength": 10
+        },
+        "fipe_code": {
+            "type": "string",
+            "maxLength": 20
+        },
+        "vehicle_description": {
+            "type": "string",
+            "maxLength": 300
+        },
+        "price_returned": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "source": {
+            "type": "string",
+            "maxLength": 30,
+            "default": "admin"
+        },
+        "result_json": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "phone",
+        "source"
+    ]
+}

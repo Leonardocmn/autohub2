@@ -1,0 +1,37 @@
+{
+    "title": "negotiation_history",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "offer_id": {
+            "type": "integer",
+            "description": "Reference to offer"
+        },
+        "admin_name": {
+            "type": "string",
+            "description": "Admin who made the change"
+        },
+        "previous_status": {
+            "type": "string",
+            "description": "Previous status"
+        },
+        "new_status": {
+            "type": "string",
+            "description": "New status"
+        },
+        "buyer_id": {
+            "type": "integer",
+            "description": "Buyer linked to negotiation"
+        },
+        "observations": {
+            "type": "string",
+            "description": "Admin observations"
+        }
+    },
+    "required": [
+        "offer_id",
+        "new_status"
+    ]
+}
